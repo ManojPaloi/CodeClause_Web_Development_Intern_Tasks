@@ -1,0 +1,77 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6f86d6, #48c6ef);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #48c6ef;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6f86d6;
+}
+
+.sent-folder ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sent-folder ul li {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: left;
+}

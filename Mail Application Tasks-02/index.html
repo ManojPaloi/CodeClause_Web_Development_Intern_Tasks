@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mail Application</h1>
+        <div class="form login-form">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div class="form smtp-config-form" style="display:none;">
+            <h2>SMTP Configuration</h2>
+            <input type="text" id="smtpServer" placeholder="SMTP Server">
+            <input type="text" id="smtpPort" placeholder="SMTP Port">
+            <input type="text" id="smtpUser" placeholder="SMTP Username">
+            <input type="password" id="smtpPassword" placeholder="SMTP Password">
+            <button onclick="saveConfig()">Save Configuration</button>
+        </div>
+
+        <div class="form mail-form" style="display:none;">
+            <h2>Send Email</h2>
+            <input type="email" id="to" placeholder="To">
+            <input type="text" id="subject" placeholder="Subject">
+            <textarea id="body" placeholder="Email Body"></textarea>
+            <button onclick="sendEmail()">Send Email</button>
+        </div>
+
+        <div class="sent-folder" style="display:none;">
+            <h2>Sent Emails</h2>
+            <ul id="sentEmailsList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
