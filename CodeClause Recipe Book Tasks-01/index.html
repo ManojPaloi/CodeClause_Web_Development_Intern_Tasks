@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>My Recipe Book</h1>
+    </header>
+    <main>
+        <section id="add-recipe">
+            <h2>Add a New Recipe</h2>
+            <form id="recipe-form">
+                <input type="text" id="title" placeholder="Recipe Title" required>
+                <input type="text" id="ingredients" placeholder="Ingredients (comma separated)" required>
+                <textarea id="instructions" placeholder="Instructions" required></textarea>
+                <input type="file" id="image" accept="image/*">
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+        <section id="recipe-list">
+            <h2>Recipes</h2>
+            <div id="recipes"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
